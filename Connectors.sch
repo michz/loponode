@@ -217,10 +217,10 @@ Wire Wire Line
 Wire Wire Line
 	9900 2950 10050 2950
 $Comp
-L power:+BATT #PWR?
+L power:+BATT #PWR0139
 U 1 1 5D1B82A2
 P 1450 2100
-F 0 "#PWR?" H 1450 1950 50  0001 C CNN
+F 0 "#PWR0139" H 1450 1950 50  0001 C CNN
 F 1 "+BATT" H 1465 2273 50  0000 C CNN
 F 2 "" H 1450 2100 50  0001 C CNN
 F 3 "" H 1450 2100 50  0001 C CNN
@@ -228,12 +228,12 @@ F 3 "" H 1450 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:SolderJumper_2_Bridged JP?
+L Jumper:SolderJumper_2_Bridged JP3
 U 1 1 5D1B8927
 P 1450 2450
-F 0 "JP?" V 1404 2518 50  0000 L CNN
+F 0 "JP3" V 1404 2518 50  0000 L CNN
 F 1 "Power_Measure_Batt" V 1495 2518 50  0000 L CNN
-F 2 "" H 1450 2450 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 1450 2450 50  0001 C CNN
 F 3 "~" H 1450 2450 50  0001 C CNN
 	1    1450 2450
 	0    1    1    0   

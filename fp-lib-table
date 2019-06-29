@@ -1,3 +1,3 @@
 (fp_lib_table
-  (lib (name TPS61322)(type KiCad)(uri ${KIPRJMOD}/tps61322.dcm)(options "")(descr ""))
+  (lib (name SOT95P280X145-5N)(type Legacy)(uri ${KIPRJMOD}/SOT95P280X145-5N.mod)(options "")(descr ""))
 )
