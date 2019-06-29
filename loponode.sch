@@ -15,17 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_ST_STM32L0:STM32L073CBTx U2
-U 1 1 5CFFD9E1
-P 7300 3600
-F 0 "U2" H 7250 2011 50  0000 C CNN
-F 1 "STM32L073CBTx" H 7250 1920 50  0000 C CNN
-F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 6700 2200 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00141036.pdf" H 7300 3600 50  0001 C CNN
-	1    7300 3600
-	1    0    0    -1  
-$EndComp
-$Comp
 L RF:NRF24L01_Breakout U3
 U 1 1 5CFFF57D
 P 10400 4400
@@ -786,14 +775,10 @@ Text GLabel 6400 3000 0    50   Input ~ 0
 EXTINT
 Wire Wire Line
 	6400 3000 6600 3000
-Text GLabel 6400 4200 0    50   Input ~ 0
+Text GLabel 6400 4700 0    50   Input ~ 0
 SCL
-Text GLabel 6400 4300 0    50   Input ~ 0
+Text GLabel 6400 4800 0    50   Input ~ 0
 SDA
-Wire Wire Line
-	6400 4300 6600 4300
-Wire Wire Line
-	6600 4200 6400 4200
 Text GLabel 6400 3700 0    50   Input ~ 0
 GPIO_PB3
 Text GLabel 6400 3800 0    50   Input ~ 0
@@ -816,8 +801,6 @@ NoConn ~ 6600 3400
 NoConn ~ 6600 3500
 NoConn ~ 6600 3600
 NoConn ~ 6600 4600
-NoConn ~ 6600 4700
-NoConn ~ 6600 4800
 NoConn ~ 6600 4900
 NoConn ~ 7900 4400
 NoConn ~ 7900 4300
@@ -906,4 +889,19 @@ Wire Wire Line
 	7200 6250 7200 5200
 Wire Wire Line
 	10400 5000 10400 6250
+$Comp
+L MCU_ST_STM32L0:STM32L073CBTx U2
+U 1 1 5CFFD9E1
+P 7300 3600
+F 0 "U2" H 7250 2011 50  0000 C CNN
+F 1 "STM32L073CBTx" H 7250 1920 50  0000 C CNN
+F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 6700 2200 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00141036.pdf" H 7300 3600 50  0001 C CNN
+	1    7300 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 4700 6600 4700
+Wire Wire Line
+	6600 4800 6400 4800
 $EndSCHEMATC

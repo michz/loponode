@@ -75,9 +75,9 @@ Text GLabel 9500 1850 0    50   Input ~ 0
 SDA
 Text GLabel 9500 1750 0    50   Input ~ 0
 SCL
-Text GLabel 9500 2050 0    50   Input ~ 0
-UART_TX
 Text GLabel 9500 2150 0    50   Input ~ 0
+UART_TX
+Text GLabel 9500 2050 0    50   Input ~ 0
 UART_RX
 Text GLabel 9500 2250 0    50   Input ~ 0
 EXTINT
@@ -85,13 +85,13 @@ Text GLabel 9500 2350 0    50   Input ~ 0
 DBG_TX
 Text GLabel 9500 2450 0    50   Input ~ 0
 DBG_RX
-Text GLabel 9500 2550 0    50   Input ~ 0
-GPIO_PB3
 Text GLabel 9500 2650 0    50   Input ~ 0
-GPIO_PB4
+GPIO_PB3
 Text GLabel 9500 2750 0    50   Input ~ 0
-GPIO_PB5
+GPIO_PB4
 Text GLabel 9500 2850 0    50   Input ~ 0
+GPIO_PB5
+Text GLabel 9500 2550 0    50   Input ~ 0
 GPIO_PA15
 Wire Wire Line
 	8550 1650 8550 3200
@@ -233,7 +233,7 @@ U 1 1 5D1B8927
 P 1450 2450
 F 0 "JP3" V 1404 2518 50  0000 L CNN
 F 1 "Power_Measure_Batt" V 1495 2518 50  0000 L CNN
-F 2 "" H 1450 2450 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 1450 2450 50  0001 C CNN
 F 3 "~" H 1450 2450 50  0001 C CNN
 	1    1450 2450
 	0    1    1    0   

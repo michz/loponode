@@ -34,20 +34,16 @@ Wire Wire Line
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5D1836DA
-P 9900 1400
+P 9000 1400
 AR Path="/5D1836DA" Ref="#PWR?"  Part="1" 
 AR Path="/5D16888B/5D1836DA" Ref="#PWR0131"  Part="1" 
-F 0 "#PWR0131" H 9900 1250 50  0001 C CNN
-F 1 "+3V3" H 9915 1573 50  0000 C CNN
-F 2 "" H 9900 1400 50  0001 C CNN
-F 3 "" H 9900 1400 50  0001 C CNN
-	1    9900 1400
+F 0 "#PWR0131" H 9000 1250 50  0001 C CNN
+F 1 "+3V3" H 9015 1573 50  0000 C CNN
+F 2 "" H 9000 1400 50  0001 C CNN
+F 3 "" H 9000 1400 50  0001 C CNN
+	1    9000 1400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9900 1400 9900 1550
-Wire Wire Line
-	9900 1550 10050 1550
 $Comp
 L power:GND #PWR?
 U 1 1 5D1836E6
@@ -62,22 +58,18 @@ F 3 "" H 8550 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8550 1650 10050 1650
-Wire Wire Line
 	10050 1750 9500 1750
-Wire Wire Line
-	9500 1850 10050 1850
 Wire Wire Line
 	10050 2050 9500 2050
 Wire Wire Line
 	9500 2150 10050 2150
-Text GLabel 9500 1850 0    50   Input ~ 0
-SDA
-Text GLabel 9500 1750 0    50   Input ~ 0
-SCL
-Text GLabel 9500 2050 0    50   Input ~ 0
-UART_TX
 Text GLabel 9500 2150 0    50   Input ~ 0
+SDA
+Text GLabel 9500 2050 0    50   Input ~ 0
+SCL
+Text GLabel 9500 1750 0    50   Input ~ 0
+UART_TX
+Text GLabel 9500 1650 0    50   Input ~ 0
 UART_RX
 Text GLabel 9500 2250 0    50   Input ~ 0
 EXTINT
@@ -85,16 +77,14 @@ Text GLabel 9500 2350 0    50   Input ~ 0
 DBG_TX
 Text GLabel 9500 2450 0    50   Input ~ 0
 DBG_RX
-Text GLabel 9500 2550 0    50   Input ~ 0
-GPIO_PB3
 Text GLabel 9500 2650 0    50   Input ~ 0
-GPIO_PB4
+GPIO_PB3
 Text GLabel 9500 2750 0    50   Input ~ 0
-GPIO_PB5
+GPIO_PB4
 Text GLabel 9500 2850 0    50   Input ~ 0
+GPIO_PB5
+Text GLabel 9500 2550 0    50   Input ~ 0
 GPIO_PA15
-Wire Wire Line
-	8550 1650 8550 3200
 $Comp
 L power:GND #PWR?
 U 1 1 5D1D4F2A
@@ -242,4 +232,14 @@ Wire Wire Line
 	1450 2300 1450 2100
 Wire Wire Line
 	1450 2600 1450 2950
+Wire Wire Line
+	9500 1650 10050 1650
+Wire Wire Line
+	9000 1400 9000 1850
+Wire Wire Line
+	9000 1850 10050 1850
+Wire Wire Line
+	8550 1550 8550 3200
+Wire Wire Line
+	8550 1550 10050 1550
 $EndSCHEMATC
