@@ -73,17 +73,13 @@ Text GLabel 9500 1650 0    50   Input ~ 0
 UART_RX
 Text GLabel 9500 2250 0    50   Input ~ 0
 EXTINT
-Text GLabel 9500 2350 0    50   Input ~ 0
-DBG_TX
 Text GLabel 9500 2450 0    50   Input ~ 0
-DBG_RX
-Text GLabel 9500 2650 0    50   Input ~ 0
 GPIO_PB3
-Text GLabel 9500 2750 0    50   Input ~ 0
-GPIO_PB4
-Text GLabel 9500 2850 0    50   Input ~ 0
-GPIO_PB5
 Text GLabel 9500 2550 0    50   Input ~ 0
+GPIO_PB4
+Text GLabel 9500 2650 0    50   Input ~ 0
+GPIO_PB5
+Text GLabel 9500 2350 0    50   Input ~ 0
 GPIO_PA15
 $Comp
 L power:GND #PWR?
@@ -104,29 +100,14 @@ Wire Wire Line
 	8750 1950 10050 1950
 Wire Wire Line
 	10050 2250 9500 2250
-$Comp
-L Connector_Generic:Conn_01x16 J4
-U 1 1 5D1D5844
-P 10250 2250
-F 0 "J4" H 10330 2242 50  0000 L CNN
-F 1 "Conn_01x16" H 10330 2151 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 10250 2250 50  0001 C CNN
-F 3 "~" H 10250 2250 50  0001 C CNN
-	1    10250 2250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10050 2350 9500 2350
 Wire Wire Line
 	9500 2450 10050 2450
 Wire Wire Line
-	10050 2550 9500 2550
+	9500 2550 10050 2550
 Wire Wire Line
 	9500 2650 10050 2650
-Wire Wire Line
-	9500 2750 10050 2750
-Wire Wire Line
-	9500 2850 10050 2850
 $Comp
 L Connector_Generic:Conn_01x03 J3
 U 1 1 5D1D8915
@@ -186,9 +167,7 @@ F 3 "" H 8400 1400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8400 1400 8400 3050
-Wire Wire Line
-	8400 3050 10050 3050
+	8400 1400 8400 2850
 $Comp
 L power:GND #PWR?
 U 1 1 5D221442
@@ -202,10 +181,6 @@ F 3 "" H 9900 3200 50  0001 C CNN
 	1    9900 3200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9900 3200 9900 2950
-Wire Wire Line
-	9900 2950 10050 2950
 $Comp
 L power:+BATT #PWR0139
 U 1 1 5D1B82A2
@@ -242,4 +217,21 @@ Wire Wire Line
 	8550 1550 8550 3200
 Wire Wire Line
 	8550 1550 10050 1550
+$Comp
+L Connector_Generic:Conn_01x14 J4
+U 1 1 5D1C10C6
+P 10250 2150
+F 0 "J4" H 10330 2142 50  0000 L CNN
+F 1 "Conn_01x14" H 10330 2051 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x14_P2.54mm_Vertical" H 10250 2150 50  0001 C CNN
+F 3 "~" H 10250 2150 50  0001 C CNN
+	1    10250 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 2750 9900 2750
+Wire Wire Line
+	10050 2850 8400 2850
+Wire Wire Line
+	9900 2750 9900 3200
 $EndSCHEMATC

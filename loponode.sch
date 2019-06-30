@@ -629,17 +629,6 @@ Wire Wire Line
 Wire Wire Line
 	5050 2500 6600 2500
 $Comp
-L Device:Crystal Y1
-U 1 1 5D2205E1
-P 5700 5700
-F 0 "Y1" H 5700 5968 50  0000 C CNN
-F 1 "Crystal" H 5700 5877 50  0000 C CNN
-F 2 "Crystal:Crystal_SMD_HC49-SD_HandSoldering" H 5700 5700 50  0001 C CNN
-F 3 "~" H 5700 5700 50  0001 C CNN
-	1    5700 5700
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0127
 U 1 1 5D2237D4
 P 5450 6250
@@ -684,31 +673,9 @@ F 3 "~" H 5450 6050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5950 5900 5950 5700
-Wire Wire Line
-	5950 5700 5850 5700
-Wire Wire Line
-	5550 5700 5450 5700
-Wire Wire Line
-	5450 5700 5450 5900
-Wire Wire Line
-	5450 5700 5450 2700
-Wire Wire Line
 	5450 2700 6600 2700
-Connection ~ 5450 5700
 Wire Wire Line
 	6600 2800 5950 2800
-Wire Wire Line
-	5950 2800 5950 5700
-Connection ~ 5950 5700
-Wire Wire Line
-	7900 4500 9150 4500
-Wire Wire Line
-	9150 4500 9150 4600
-Wire Wire Line
-	9100 4700 9100 4600
-Wire Wire Line
-	9100 4600 7900 4600
 Wire Wire Line
 	7900 4100 9900 4100
 Wire Wire Line
@@ -717,10 +684,6 @@ Wire Wire Line
 	8500 4300 9900 4300
 Wire Wire Line
 	8600 4400 9900 4400
-Wire Wire Line
-	9150 4600 9900 4600
-Wire Wire Line
-	9100 4700 9900 4700
 $Comp
 L power:+BATT #PWR0129
 U 1 1 5D2BDCC6
@@ -732,8 +695,6 @@ F 3 "" H 8450 2350 50  0001 C CNN
 	1    8450 2350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7900 3400 8450 3400
 $Comp
 L Jumper:SolderJumper_2_Open JP2
 U 1 1 5D2C2996
@@ -747,8 +708,6 @@ F 3 "~" H 8450 2750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8450 2350 8450 2600
-Wire Wire Line
-	8450 2900 8450 3400
 $Sheet
 S 5150 6900 1100 800 
 U 5D16888B
@@ -799,7 +758,6 @@ NoConn ~ 6600 3100
 NoConn ~ 6600 3200
 NoConn ~ 6600 3400
 NoConn ~ 6600 3500
-NoConn ~ 6600 3600
 NoConn ~ 6600 4600
 NoConn ~ 6600 4900
 NoConn ~ 7900 4400
@@ -807,7 +765,6 @@ NoConn ~ 7900 4300
 NoConn ~ 7900 4200
 NoConn ~ 7900 3700
 NoConn ~ 7900 3600
-NoConn ~ 7900 3500
 Text Label 8250 4700 2    50   ~ 0
 SWDIO
 Text Label 8250 4800 2    50   ~ 0
@@ -904,4 +861,85 @@ Wire Wire Line
 	6400 4700 6600 4700
 Wire Wire Line
 	6600 4800 6400 4800
+Text Label 6250 3600 0    50   ~ 0
+RF_CE
+Wire Wire Line
+	6250 3600 6600 3600
+Text Label 9500 4600 0    50   ~ 0
+RF_CE
+Wire Wire Line
+	9500 4600 9900 4600
+Wire Wire Line
+	7900 3400 8700 3400
+Wire Wire Line
+	8700 3400 8700 4700
+Wire Wire Line
+	8700 4700 9900 4700
+Wire Wire Line
+	7900 3500 8450 3500
+Wire Wire Line
+	8450 3500 8450 2900
+NoConn ~ 7900 4500
+NoConn ~ 7900 4600
+NoConn ~ 6600 4300
+NoConn ~ 6600 4200
+$Comp
+L Device:Crystal_GND24_Small Y1
+U 1 1 5D1CF045
+P 5700 5700
+F 0 "Y1" H 5844 5746 50  0000 L CNN
+F 1 "8MHz" H 5844 5655 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_EuroQuartz_MQ-4Pin_7.0x5.0mm_HandSoldering" H 5700 5700 50  0001 C CNN
+F 3 "~" H 5700 5700 50  0001 C CNN
+	1    5700 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 2800 5950 5700
+Wire Wire Line
+	5450 2700 5450 5700
+Wire Wire Line
+	5600 5700 5450 5700
+Connection ~ 5450 5700
+Wire Wire Line
+	5450 5700 5450 5900
+Wire Wire Line
+	5800 5700 5950 5700
+Connection ~ 5950 5700
+Wire Wire Line
+	5950 5700 5950 5900
+$Comp
+L power:GND #PWR0140
+U 1 1 5D1F5009
+P 5750 6250
+F 0 "#PWR0140" H 5750 6000 50  0001 C CNN
+F 1 "GND" H 5755 6077 50  0000 C CNN
+F 2 "" H 5750 6250 50  0001 C CNN
+F 3 "" H 5750 6250 50  0001 C CNN
+	1    5750 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0141
+U 1 1 5D1F521F
+P 6300 6250
+F 0 "#PWR0141" H 6300 6000 50  0001 C CNN
+F 1 "GND" H 6305 6077 50  0000 C CNN
+F 2 "" H 6300 6250 50  0001 C CNN
+F 3 "" H 6300 6250 50  0001 C CNN
+	1    6300 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 6250 5750 5900
+Wire Wire Line
+	5750 5900 5700 5900
+Wire Wire Line
+	5700 5900 5700 5800
+Wire Wire Line
+	5700 5600 5700 5500
+Wire Wire Line
+	5700 5500 6300 5500
+Wire Wire Line
+	6300 5500 6300 6250
 $EndSCHEMATC
