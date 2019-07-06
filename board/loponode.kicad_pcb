@@ -382,7 +382,7 @@
   )
 
   (module Symbol:OSHW-Logo_5.7x6mm_SilkScreen (layer F.Cu) (tedit 0) (tstamp 5D18C3D2)
-    (at 132.9182 117.221)
+    (at 131.2672 134.112)
     (descr "Open Source Hardware Logo")
     (tags "Logo OSHW")
     (attr virtual)
@@ -1653,7 +1653,7 @@
   (gr_line (start 156.2608 121.539) (end 111.8362 121.539) (layer Edge.Cuts) (width 0.1))
   (gr_line (start 156.2608 147.3962) (end 156.2608 121.539) (layer Edge.Cuts) (width 0.1))
   (gr_line (start 111.8362 147.3962) (end 156.2608 147.3962) (layer Edge.Cuts) (width 0.1))
-  (gr_text github.com/michz (at 102.87 129.5908) (layer F.SilkS)
+  (gr_text github.com/michz (at 127.9398 139.7254) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_line (start 110.998 151.638) (end 110.998 118.618) (layer Margin) (width 0.15) (tstamp 5D17D4E0))
